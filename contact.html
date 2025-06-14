@@ -4,20 +4,34 @@
   <meta charset="UTF-8">
   <title>Contact – Vishnu Prasoodanan P K, PhD</title>
   <link rel="stylesheet" href="assets/css/style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome for social/media/location icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
   <style>
     body {
       font-family: 'Merriweather', serif;
-      line-height: 1.5;
+      line-height: 1.6;
+    }
+    .contact-info {
+      margin-top: 20px;
     }
     .contact-info p {
-      margin-bottom: 0.8em;
+      margin: 12px 0;
+    }
+    .contact-info i {
+      margin-right: 10px;
+      color: #444;
+    }
+    .contact-info a {
+      text-decoration: none;
+      color: #0066cc;
     }
   </style>
 </head>
 <body>
 
-  <!-- Load shared sidebar -->
+  <!-- Shared Sidebar -->
   <div id="sidebar-container"></div>
   <script>
     fetch("sidebar.html")
@@ -27,15 +41,15 @@
       });
   </script>
 
-  <!-- Main content area -->
+  <!-- Main Content -->
   <div class="main-content">
     <h1>Contact</h1>
+
     <div class="contact-info">
-      <p>📍 <strong>Address:</strong> 412a Food Science Building, University College Cork, Cork, T12 Y337</p>
-      <p>📧 <strong>Email:</strong> <a href="mailto:vprasoodananputhiya@ucc.ie">vprasoodananputhiya@ucc.ie</a></p>
-      <p>🐦 <strong>Twitter:</strong> <a href="https://x.com/VishnuPrasoodan" target="_blank">@VishnuPrasoodan</a></p>
-      <p>💼 <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/vishnu-prasoodanan-p-k-ph-d-7a672072/" target="_blank">linkedin.com/vishnu-prasoodanan</a></p>
-      <p>🔗 <strong>GitHub:</strong> <a href="https://github.com/vishnuprasoodanan" target="_blank">github.com/vishnuprasoodanan</a></p>
+      <p><i class="fas fa-envelope"></i> <a href="mailto:vishnu@email.com">vishnu@email.com</a></p>
+      <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/vishnuprasoodanan" target="_blank">linkedin.com/in/vishnuprasoodanan</a></p>
+      <p><i class="fab fa-x-twitter"></i> <a href="https://twitter.com/vishnuxhandle" target="_blank">@vishnuxhandle</a></p>
+      <p><i class="fas fa-map-marker-alt"></i> <a href="https://www.google.com/maps/place/Cork,+Ireland" target="_blank">Cork, Ireland</a></p>
     </div>
   </div>
 
