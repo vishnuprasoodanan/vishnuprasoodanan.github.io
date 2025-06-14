@@ -24,7 +24,7 @@ body {
 .main-content {
   margin-left: 320px;         /* pushes content away from sidebar */
   margin-right: 280px;         /* space between content and right edge of screen */
-  padding: 100px 0;            /* top/bottom padding, no extra left/right padding */
+  padding: 100px 60px;            /* top/bottom padding, no extra left/right padding */
   max-width: none;            /* optional: let it stretch as wide as needed */
 }
 
