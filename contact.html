@@ -1,1 +1,29 @@
-<html><head><link rel='stylesheet' href='assets/css/style.css'></head><body><div class='sidebar'><h2 style="font-size: 18px;">Vishnu Prasoodanan P K, PhD</h2><a href='index.html'>Home</a><a href='about.html'>About Me</a><a href='research.html'>Research</a><a href='publications.html'>Publications</a><a href='cv.html'>CV</a><a href='gallery.html'>Gallery</a><a href='contact.html'>Contact</a></div><div class='main-content'><h1>Contact</h1><p>Email: your.email@example.com</p></div></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact – Vishnu Prasoodanan P K, PhD</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Load shared sidebar -->
+  <div id="sidebar-container"></div>
+  <script>
+    fetch("sidebar.html")
+      .then(res => res.text())
+      .then(html => {
+        document.getElementById("sidebar-container").innerHTML = html;
+      });
+  </script>
+
+  <!-- Main content area -->
+  <div class="main-content">
+    <h1>Contact</h1>
+    <p>Email: your.email@example.com</p>
+    <p>GitHub: <a href="https://github.com/vishnuprasoodanan" target="_blank">vishnuprasoodanan</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/YOUR-LINK" target="_blank">linkedin.com/in/YOUR-LINK</a></p>
+  </div>
+
+</body>
+</html>
