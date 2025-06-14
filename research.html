@@ -4,6 +4,40 @@
   <meta charset="UTF-8">
   <title>Research – Vishnu Prasoodanan P K, PhD</title>
   <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- Font for consistency -->
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Merriweather', serif;
+      line-height: 1.6;
+    }
+    .project-section {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 40px;
+    }
+    .project-text {
+      flex: 1 1 60%;
+      padding-right: 20px;
+    }
+    .project-image {
+      flex: 1 1 35%;
+      text-align: center;
+    }
+    .project-image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+      margin-top: 30px;
+      font-size: 22px;
+      color: #333;
+    }
+  </style>
 </head>
 <body>
 
@@ -20,14 +54,32 @@
   <!-- Main Content -->
   <div class="main-content">
     <h1>Research</h1>
-    <p>Focus on gut microbiome, diet interactions, and machine learning...</p>
+    <p>Research projects I have contributed to and successfully completed are provided here.</p>
 
-    <ul>
-      <li><strong>Gut Microbiome Ecology:</strong> Characterizing microbial diversity and functional profiles across populations.</li>
-      <li><strong>Diet-Microbiome Interactions:</strong> Analyzing how habitual and controlled diets shape microbiome composition and function.</li>
-      <li><strong>Computational Modelling:</strong> Developing machine learning models to predict disease risk and dietary responses based on microbiome features.</li>
-      <li><strong>Strain-level Resolution:</strong> Investigating functional adaptation and strain-level dynamics of key taxa like <em>Prevotella</em> and <em>Bacteroides</em>.</li>
-    </ul>
+    <div class="project-section">
+      <div class="project-text">
+        <h2>Dietary Intervention Study Using Mouse Models</h2>
+        <p>In this study, I contributed to the computational analysis of metagenomic data from dietary intervention experiments using human-to-mouse microbiota transplants. Mice received fecal microbiota from humans on high- or low-fiber diets. Combining metabolomics and ex vivo mucus function assays, the study showed that increased fiber intake enriches <em>Blautia</em>, and specifically <em>B. coccoides</em>, which enhances mucus function via SCFA production and activation of the Ffar2 receptor.</p>
+      </div>
+      <div class="project-image">
+        <img src="assets/images/NatComm.png" alt="Dietary intervention mouse model study image">
+      </div>
+    </div>
+
+    <div class="project-section">
+      <div class="project-text">
+        <h2>Uncovering the Global Diversity and Functional Roles of Prevotella in the Human Gut Microbiome</h2>
+        <p>I conducted a comprehensive analysis of <em>Prevotella</em> species in the global human gut microbiome using publicly available metagenomic datasets from both healthy individuals and those with IBD. This included a large Indian cohort of 200 individuals consuming plant-based diets, which showed the highest <em>Prevotella</em> abundance among all populations analyzed.</p>
+
+        <p>To support this study, I developed a <strong>Prevotella Genome Database</strong> comprising 2,204 genomes/MAGs—including five newly isolated <em>P. copri</em> strains from India—and a gene catalogue with 2.9 million genes. My analysis revealed extensive unexplored diversity of <em>P. copri</em> in non-Western populations, enriched in genes for degrading complex plant polysaccharides (e.g., xylan, pectin, hemicellulose), suggesting a beneficial dietary adaptation.</p>
+
+        <p>In contrast, Western populations showed greater abundance of <em>Prevotella</em> species linked to oral inflammation, along with virulence factors and antibiotic resistance genes, indicating potential pathobiont roles and a mouth-gut axis. This is one of the first <em>Prevotella</em>-focused studies on the Indian gut microbiome, offering novel insights into its population-specific roles in health and disease.</p>
+      </div>
+      <div class="project-image">
+        <img src="assets/images/Prevotella.png" alt="Prevotella gut microbiome research image">
+      </div>
+    </div>
+
   </div>
 
 </body>
