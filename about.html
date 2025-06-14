@@ -1,30 +1,36 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <title>About Me – Vishnu Prasoodanan P K, PhD</title>
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <div class="sidebar">
-    <h2 style="font-size: 18px;">Vishnu Prasoodanan P K, PhD</h2>
-    <a href="index.html">Home</a>
-    <a href="about.html">About Me</a>
-    <a href="research.html">Research</a>
-    <a href="publications.html">Publications</a>
-    <a href="cv.html">CV</a>
-    <a href="gallery.html">Gallery</a>
-    <a href="contact.html">Contact</a>
-  </div>
 
+  <!-- Shared Sidebar -->
+  <div id="sidebar-container"></div>
+  <script>
+    fetch("sidebar.html")
+      .then(res => res.text())
+      .then(html => {
+        document.getElementById("sidebar-container").innerHTML = html;
+      });
+  </script>
+
+  <!-- Main Content -->
   <div class="main-content">
     <h1>About Me</h1>
     <img src="assets/images/Vishnu.png" alt="Vishnu Prasoodanan"
          style="max-width: 200px; float: left; border-radius: 12px; margin: 0 20px 20px 0;">
+
     <p>I apply advanced computational workflows to explore high-dimensional biological datasets generated from next-generation sequencing and metabolomics. My core focus is the gut microbiome: I integrate metagenomic, (meta-)transcriptomic and metabolomic profiles and probe them with rigorous statistical models to uncover taxonomic and functional patterns.</p>
 
     <p>After analysing large population cohorts—where habitual diets drive pronounced compositional variability—I shifted to tightly controlled dietary interventions in mouse models. These systems let me trace microbiome dynamics with single-nutrient resolution while precisely quantifying intake. To further resemble human ecology, our research group establish human-like communities in mice via fecal microbiota transplantation, creating a powerful bridge between discovery and mechanistic validation.</p>
 
     <p>Building on insights gained from controlled dietary intervention studies—particularly their impact on gut mucus function during my first postdoctoral research—I had the opportunity to collaborate closely with molecular biologists, biochemists, and microbiologists. These interdisciplinary interactions not only enriched my understanding of host-microbiome interactions but also highlighted how computational approaches can meaningfully support experimental research.</p>
-    
+
     <p>As I continue to grow as an independent computational biologist, I have expanded my focus to incorporate data science and machine learning techniques to model microbiome responses to dietary patterns. My current research emphasizes high-resolution, strain-level microbiome profiling, with a particular interest in how microbial populations adapt functionally and taxonomically to different nutritional environments. This direction aligns with my broader goal of developing predictive frameworks that link diet, microbial composition, and host health outcomes.</p>
   </div>
+
 </body>
 </html>
