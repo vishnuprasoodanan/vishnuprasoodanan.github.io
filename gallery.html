@@ -5,20 +5,26 @@
   <title>Gallery – Vishnu Prasoodanan P K, PhD</title>
   <link rel="stylesheet" href="assets/css/style.css">
   <style>
+    .gallery-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
     .gallery-item {
-      margin-bottom: 30px;
+      width: 300px;
+      flex-shrink: 0;
     }
     .gallery-item img {
-      max-width: 100%;
+      width: 100%;
       height: auto;
       border-radius: 8px;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     }
     .gallery-caption {
       font-family: 'Merriweather', serif;
-      font-size: 16px;
-      margin-top: 12px;
-      line-height: 1.6;
+      font-size: 15px;
+      margin-top: 10px;
+      line-height: 1.5;
     }
   </style>
 </head>
@@ -38,14 +44,15 @@
   <div class="main-content">
     <h1>Gallery</h1>
 
-    <div class="gallery-item">
-      <img src="assets/images/VishnuPoster.jpg" alt="Vishnu presenting poster at UCMR Day 2025">
-      <p class="gallery-caption">
-        Had a great time presenting my work at <strong>UCMR Day 2025</strong>! Grateful for the valuable feedback and inspiring discussions with fellow researchers. Thanks to <strong>Dr. Bjoern O. Schroeder</strong>, and the UCMR community at <strong>Umeå University</strong> for the opportunity.<br>
-        Looking forward to building on these insights and collaborations!
-      </p>
+    <div class="gallery-grid">
+      <div class="gallery-item">
+        <img src="assets/images/VishnuPoster.jpg" alt="Vishnu presenting poster at UCMR Day 2025">
+        <p class="gallery-caption">
+          Had a great time presenting my work at <strong>UCMR Day 2025</strong>! Grateful for the valuable feedback and inspiring discussions with fellow researchers. Thanks to <strong>Dr. Bjoern O. Schroeder</strong> and the UCMR community at <strong>Umeå University</strong> for the opportunity.<br>
+          Looking forward to building on these insights and collaborations!
+        </p>
+      </div>
     </div>
-
   </div>
 
 </body>
