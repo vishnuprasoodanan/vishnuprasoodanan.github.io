@@ -4,10 +4,38 @@
   <meta charset="UTF-8">
   <title>CV – Vishnu Prasoodanan P K, PhD</title>
   <link rel="stylesheet" href="assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Merriweather', serif;
+      line-height: 1.6;
+    }
+    h2 {
+      margin-top: 1.5em;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 0.2em;
+    }
+    .cv-section {
+      margin-bottom: 2em;
+    }
+    .cv-section ul {
+      list-style-type: disc;
+      margin-left: 20px;
+    }
+    .cv-section li {
+      margin-bottom: 0.5em;
+    }
+    .highlight {
+      font-weight: bold;
+    }
+    .publication-list {
+      list-style-type: decimal;
+      margin-left: 20px;
+    }
+  </style>
 </head>
 <body>
 
-  <!-- Load shared sidebar -->
   <div id="sidebar-container"></div>
   <script>
     fetch("sidebar.html")
@@ -17,11 +45,97 @@
       });
   </script>
 
-  <!-- Main content area -->
   <div class="main-content">
-    <h1>CV</h1>
-    <p><a href="assets/pdfs/Vishnu_CV.pdf" target="_blank">Download my CV</a></p>
-  </div>
+    <h1>Curriculum Vitae</h1>
 
+    <div class="cv-section">
+      <h2>Education</h2>
+      <p><strong>2025–Present:</strong> Postdoctoral Fellow, APC Microbiome Ireland, University College Cork, Ireland</p>
+      <p><strong>2022–2025:</strong> Postdoctoral Fellow, MIMS, Umeå University, Sweden</p>
+      <p><strong>2016–2022:</strong> PhD in Biological Sciences, IISER Bhopal, India</p>
+      <p><strong>2010–2015:</strong> BS-MS in Biological Sciences, IISER Bhopal, India</p>
+    </div>
+
+    <div class="cv-section">
+      <h2>Publications (\u2020 indicates equal/first authorship)</h2>
+      <ol class="publication-list">
+        <li>Holmberg SM†, Feeney RH†, <strong>Prasoodanan PK†</strong> et al. <em>Nat Commun</em>. 2024.</li>
+        <li><strong>Prasoodanan PK†</strong>, Kumar S et al. <em>Sci Rep</em>. 2024.</li>
+        <li>Saxena R†, <strong>Prasoodanan PK†</strong> et al. <em>Front Cell Infect Microbiol</em>. 2022.</li>
+        <li><strong>Prasoodanan PK†</strong> et al. <em>NPJ Biofilms Microbiomes</em>. 2021.</li>
+        <li><strong>Prasoodanan PK†</strong> et al. Preprint <em>bioRxiv</em>, 2021.</li>
+        <li>Gupta A, <strong>Prasoodanan PK</strong> et al. <em>mSystems</em>. 2019.</li>
+        <li>Mittal P, <strong>Prasoodanan PK</strong> et al. <em>Environ Microbiome</em>. 2019.</li>
+        <li>Jaiswal SK, <strong>Prasoodanan PK</strong> et al. <em>Front Genet</em>. 2018.</li>
+        <li>Gupta A†, Kumar S†, <strong>Prasoodanan PK†</strong> et al. <em>Front Microbiol</em>. 2016.</li>
+      </ol>
+    </div>
+
+    <div class="cv-section">
+      <h2>Research Experience</h2>
+      <ul>
+        <li><strong>2025–Present:</strong> Postdoc at APC Microbiome Ireland, Cork</li>
+        <li><strong>2022–2025:</strong> Postdoc at MIMS, Umeå University – Humanized mouse models, fiber diet, mucosal microbiota, multi-omics integration</li>
+        <li><strong>2016–2022:</strong> PhD, IISER Bhopal – Prevotella diversity, CRC biomarkers, Bacteroides/Prevotella comparison</li>
+        <li><strong>2015–2016:</strong> JRF in Metagenomics & Systems Biology Lab, IISER Bhopal</li>
+        <li><strong>2014–2015:</strong> MS Thesis – Binning-Assembly metagenomic approach</li>
+      </ul>
+    </div>
+
+    <div class="cv-section">
+      <h2>Research Skills</h2>
+      <ul>
+        <li>Metagenomics and multi-omics data analysis</li>
+        <li>Transcriptomics & RNA-Seq</li>
+        <li>Machine Learning: classification, clustering, feature selection</li>
+        <li>Data science: R, PERL, Bash, Linux, Python (basic)</li>
+        <li>Metabolomics: GC-MS, LC-MS, NMR analysis</li>
+      </ul>
+    </div>
+
+    <div class="cv-section">
+      <h2>Grants & Fellowships</h2>
+      <ul>
+        <li>INSPIRE Fellowship (PhD, DST, India)</li>
+        <li>INSPIRE Scholarship (BS-MS, DST, India)</li>
+        <li>GATE Qualified, 2016</li>
+        <li>JGEEBILS Qualified, 2015</li>
+      </ul>
+    </div>
+
+    <div class="cv-section">
+      <h2>Reviewer & Editorial</h2>
+      <p>Reviewer for <em>Scientific Reports (Nature Group)</em></p>
+    </div>
+
+    <div class="cv-section">
+      <h2>Courses & Trainings</h2>
+      <ul>
+        <li>Research Ethics, Sweden</li>
+        <li>Bioinformatics using NGS (NBIS)</li>
+        <li>Python for Bioinformatics (NBIS)</li>
+      </ul>
+    </div>
+
+    <div class="cv-section">
+      <h2>Conferences & Workshops</h2>
+      <ul>
+        <li>2023 Nordic EMBL Meeting, Helsinki</li>
+        <li>2022 Microbiome National Conference, India</li>
+        <li>Multiple workshops on HPC, bio-entrepreneurship, and biology meets (2012–2015)</li>
+      </ul>
+    </div>
+
+    <div class="cv-section">
+      <h2>Media Coverage</h2>
+      <ul>
+        <li><a href="https://indianexpress.com/article/technology/science/study-variation-gut-bacterial-compositionsindian-western-populations-7615158/lite/" target="_blank">Indian Express</a></li>
+        <li><a href="https://www.expresshealthcare.in/news/iiser-bhopal-research-shows-differences-in-gut-bacterialcompositions-between-indian-and-western-populations/432018/" target="_blank">Express Healthcare</a></li>
+        <li><a href="https://www.indiatoday.in/education-today/news/story/iiser-bhopal-research-to-help-developnew-probiotics-and-prebiotics-1874808-2021-11-09" target="_blank">India Today</a></li>
+        <li><a href="https://timesofindia.indiatimes.com/city/bhopal/colon-cancer-lower-in-india-due-to-veg-rich-dietiiser-study/articleshow/87199732.cms" target="_blank">Times of India</a></li>
+        <li><a href="https://timesofindia.indiatimes.com/city/bhopal/iiser-b-study-claims-breakthrough-in-earlydetection-of-colorectal-cancer/articleshow/72191108.cms" target="_blank">TOI - CRC Early Detection</a></li>
+      </ul>
+    </div>
+  </div>
 </body>
 </html>
