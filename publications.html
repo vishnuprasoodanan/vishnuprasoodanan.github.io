@@ -1,1 +1,33 @@
-<html><head><link rel='stylesheet' href='assets/css/style.css'></head><body><div class='sidebar'><h2 style="font-size: 18px;">Vishnu Prasoodanan P K, PhD</h2><a href='index.html'>Home</a><a href='about.html'>About Me</a><a href='research.html'>Research</a><a href='publications.html'>Publications</a><a href='cv.html'>CV</a><a href='gallery.html'>Gallery</a><a href='contact.html'>Contact</a></div><div class='main-content'><h1>Publications</h1><p>List of peer-reviewed publications...</p></div></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Publications – Vishnu Prasoodanan P K, PhD</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Load shared sidebar -->
+  <div id="sidebar-container"></div>
+  <script>
+    fetch("sidebar.html")
+      .then(res => res.text())
+      .then(html => {
+        document.getElementById("sidebar-container").innerHTML = html;
+      });
+  </script>
+
+  <!-- Main content -->
+  <div class="main-content">
+    <h1>Publications</h1>
+    <p>List of peer-reviewed publications...</p>
+
+    <!-- Example entry -->
+    <ul>
+      <li>Prasoodanan V. et al. <em>Functional adaptations of Prevotella copri to plant-based diets in non-Western populations.</em> <strong>Nature Microbiology</strong>, 2023.</li>
+      <!-- Add more here -->
+    </ul>
+  </div>
+
+</body>
+</html>
