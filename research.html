@@ -1,1 +1,34 @@
-<html><head><link rel='stylesheet' href='assets/css/style.css'></head><body><div class='sidebar'><h2 style="font-size: 18px;">Vishnu Prasoodanan P K, PhD</h2><a href='index.html'>Home</a><a href='about.html'>About Me</a><a href='research.html'>Research</a><a href='publications.html'>Publications</a><a href='cv.html'>CV</a><a href='gallery.html'>Gallery</a><a href='contact.html'>Contact</a></div><div class='main-content'><h1>Research</h1><p>Focus on gut microbiome, diet interactions, machine learning...</p></div></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Research – Vishnu Prasoodanan P K, PhD</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Shared Sidebar -->
+  <div id="sidebar-container"></div>
+  <script>
+    fetch("sidebar.html")
+      .then(res => res.text())
+      .then(html => {
+        document.getElementById("sidebar-container").innerHTML = html;
+      });
+  </script>
+
+  <!-- Main Content -->
+  <div class="main-content">
+    <h1>Research</h1>
+    <p>Focus on gut microbiome, diet interactions, and machine learning...</p>
+
+    <ul>
+      <li><strong>Gut Microbiome Ecology:</strong> Characterizing microbial diversity and functional profiles across populations.</li>
+      <li><strong>Diet-Microbiome Interactions:</strong> Analyzing how habitual and controlled diets shape microbiome composition and function.</li>
+      <li><strong>Computational Modelling:</strong> Developing machine learning models to predict disease risk and dietary responses based on microbiome features.</li>
+      <li><strong>Strain-level Resolution:</strong> Investigating functional adaptation and strain-level dynamics of key taxa like <em>Prevotella</em> and <em>Bacteroides</em>.</li>
+    </ul>
+  </div>
+
+</body>
+</html>
