@@ -22,7 +22,7 @@ body {
   background-color: #333;
 }
 .main-content {
-  margin-left: 320px;         /* pushes content away from sidebar */
+  margin-left: 480px;         /* pushes content away from sidebar */
   margin-right: 280px;         /* space between content and right edge of screen */
   padding: 100px 60px;            /* top/bottom padding, no extra left/right padding */
   max-width: none;            /* optional: let it stretch as wide as needed */
