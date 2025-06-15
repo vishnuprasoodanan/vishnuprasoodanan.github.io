@@ -4,47 +4,77 @@
   <meta charset="UTF-8">
   <title>CV – Vishnu Prasoodanan P K, PhD</title>
   <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- Font for consistency -->
   <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+
   <style>
     body {
       font-family: 'Merriweather', serif;
       line-height: 1.6;
     }
+
+    .main-content {
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 28px;
+      color: #333;
+    }
+
     h2 {
       margin-top: 1.5em;
+      font-size: 20px;
       border-bottom: 1px solid #ccc;
-      padding-bottom: 0.2em;
+      padding-bottom: 0.3em;
+      color: #333;
     }
+
     .cv-section {
       margin-bottom: 2em;
     }
+
     .cv-section ul {
       list-style-type: disc;
       margin-left: 20px;
     }
+
     .cv-section li {
       margin-bottom: 0.5em;
     }
-    .highlight {
-      font-weight: bold;
-    }
+
     .publication-list {
       list-style-type: decimal;
       margin-left: 20px;
+    }
+
+    a {
+      color: #0066cc;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
 
+  <!-- Shared Sidebar -->
   <div id="sidebar-container"></div>
   <script>
     fetch("sidebar.html")
       .then(res => res.text())
       .then(html => {
         document.getElementById("sidebar-container").innerHTML = html;
+        // Remove underline from name in sidebar
+        const sidebarName = document.querySelector("#sidebar-container a.sidebar-name");
+        if (sidebarName) sidebarName.style.textDecoration = "none";
       });
   </script>
 
+  <!-- Main Content -->
   <div class="main-content">
     <h1>Curriculum Vitae</h1>
 
@@ -137,5 +167,6 @@
       </ul>
     </div>
   </div>
+
 </body>
 </html>
