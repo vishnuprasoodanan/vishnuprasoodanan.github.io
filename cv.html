@@ -23,12 +23,18 @@
       color: #333;
     }
 
-    h2 {
+    .main-content h2 {
       margin-top: 1.5em;
       font-size: 20px;
       border-bottom: 1px solid #ccc;
       padding-bottom: 0.3em;
       color: #333;
+    }
+
+    .sidebar-title {
+      color: #fff !important;
+      font-weight: bold;
+      border-bottom: none !important;
     }
 
     .cv-section {
@@ -68,9 +74,6 @@
       .then(res => res.text())
       .then(html => {
         document.getElementById("sidebar-container").innerHTML = html;
-        // Remove underline from name in sidebar
-        const sidebarName = document.querySelector("#sidebar-container a.sidebar-name");
-        if (sidebarName) sidebarName.style.textDecoration = "none";
       });
   </script>
 
